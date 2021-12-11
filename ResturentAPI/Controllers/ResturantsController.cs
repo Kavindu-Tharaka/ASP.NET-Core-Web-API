@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using ResturentAPI.Handlers;
-using ResturentAPI.Models;
 using ResturentAPI.Repositories.Resturant;
 using System.Threading.Tasks;
 
@@ -26,7 +25,7 @@ namespace ResturentAPI.Controllers
         {
             /*var resturants = await resturantRepository.GetAllResturants();*/
 
-            var resturants = await mediator.Send(new GetAllResturants.Query());
+            var resturants = await mediator.Send(new Handlers.Resturant.GetAllResturants.Query());
             return Ok(resturants);
         }
 
@@ -35,7 +34,7 @@ namespace ResturentAPI.Controllers
         {
             //var resturant = await resturantRepository.GetResturantById(id);
 
-            var resturant = await mediator.Send(new GetResturantById.Query() { Id = id});
+            var resturant = await mediator.Send(new Handlers.Resturant.GetResturantById.Query() { Id = id});
 
 
             if (resturant == null)
@@ -47,7 +46,7 @@ namespace ResturentAPI.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddResturant([FromBody] AddResturant.Command command)
+        public async Task<IActionResult> AddResturant([FromBody] Handlers.Resturant.AddResturant.Command command)
         {
             //var id = await resturantRepository.AddResturant(resturantmodel);
 
@@ -62,7 +61,7 @@ namespace ResturentAPI.Controllers
         {
             //await resturantRepository.UpdateResturant(id, document);
 
-            await mediator.Send(new UpdateResturant.Command() { Id = id, document = document });
+            await mediator.Send(new Handlers.Resturant.UpdateResturant.Command() { Id = id, document = document });
             
             return Ok();
         }
@@ -72,7 +71,7 @@ namespace ResturentAPI.Controllers
         {
             //await resturantRepository.DeleteResturant(id);
 
-            await mediator.Send(new DeleteResturant.Command() { Id = id });
+            await mediator.Send(new Handlers.Resturant.DeleteResturant.Command() { Id = id });
 
             return NoContent();
         }
