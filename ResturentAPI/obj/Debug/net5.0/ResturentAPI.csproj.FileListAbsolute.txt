@@ -10,6 +10,8 @@ D:\.NET Web API\Resturant API\ResturentAPI\ResturentAPI\bin\Debug\net5.0\Resture
 D:\.NET Web API\Resturant API\ResturentAPI\ResturentAPI\bin\Debug\net5.0\AutoMapper.dll
 D:\.NET Web API\Resturant API\ResturentAPI\ResturentAPI\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\.NET Web API\Resturant API\ResturentAPI\ResturentAPI\bin\Debug\net5.0\Humanizer.dll
+D:\.NET Web API\Resturant API\ResturentAPI\ResturentAPI\bin\Debug\net5.0\MediatR.dll
+D:\.NET Web API\Resturant API\ResturentAPI\ResturentAPI\bin\Debug\net5.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
 D:\.NET Web API\Resturant API\ResturentAPI\ResturentAPI\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
 D:\.NET Web API\Resturant API\ResturentAPI\ResturentAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 D:\.NET Web API\Resturant API\ResturentAPI\ResturentAPI\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
@@ -17,6 +19,7 @@ D:\.NET Web API\Resturant API\ResturentAPI\ResturentAPI\bin\Debug\net5.0\Microso
 D:\.NET Web API\Resturant API\ResturentAPI\ResturentAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 D:\.NET Web API\Resturant API\ResturentAPI\ResturentAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
 D:\.NET Web API\Resturant API\ResturentAPI\ResturentAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\.NET Web API\Resturant API\ResturentAPI\ResturentAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
 D:\.NET Web API\Resturant API\ResturentAPI\ResturentAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 D:\.NET Web API\Resturant API\ResturentAPI\ResturentAPI\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
 D:\.NET Web API\Resturant API\ResturentAPI\ResturentAPI\bin\Debug\net5.0\Microsoft.Identity.Client.dll
@@ -28,6 +31,9 @@ D:\.NET Web API\Resturant API\ResturentAPI\ResturentAPI\bin\Debug\net5.0\Microso
 D:\.NET Web API\Resturant API\ResturentAPI\ResturentAPI\bin\Debug\net5.0\Microsoft.OpenApi.dll
 D:\.NET Web API\Resturant API\ResturentAPI\ResturentAPI\bin\Debug\net5.0\Newtonsoft.Json.dll
 D:\.NET Web API\Resturant API\ResturentAPI\ResturentAPI\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+D:\.NET Web API\Resturant API\ResturentAPI\ResturentAPI\bin\Debug\net5.0\Npgsql.dll
+D:\.NET Web API\Resturant API\ResturentAPI\ResturentAPI\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+D:\.NET Web API\Resturant API\ResturentAPI\ResturentAPI\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll
 D:\.NET Web API\Resturant API\ResturentAPI\ResturentAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\.NET Web API\Resturant API\ResturentAPI\ResturentAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\.NET Web API\Resturant API\ResturentAPI\ResturentAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -63,9 +69,3 @@ D:\.NET Web API\Resturant API\ResturentAPI\ResturentAPI\obj\Debug\net5.0\Resture
 D:\.NET Web API\Resturant API\ResturentAPI\ResturentAPI\obj\Debug\net5.0\ref\ResturentAPI.dll
 D:\.NET Web API\Resturant API\ResturentAPI\ResturentAPI\obj\Debug\net5.0\ResturentAPI.pdb
 D:\.NET Web API\Resturant API\ResturentAPI\ResturentAPI\obj\Debug\net5.0\ResturentAPI.genruntimeconfig.cache
-D:\.NET Web API\Resturant API\ResturentAPI\ResturentAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
-D:\.NET Web API\Resturant API\ResturentAPI\ResturentAPI\bin\Debug\net5.0\Npgsql.dll
-D:\.NET Web API\Resturant API\ResturentAPI\ResturentAPI\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
-D:\.NET Web API\Resturant API\ResturentAPI\ResturentAPI\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll
-D:\.NET Web API\Resturant API\ResturentAPI\ResturentAPI\bin\Debug\net5.0\MediatR.dll
-D:\.NET Web API\Resturant API\ResturentAPI\ResturentAPI\bin\Debug\net5.0\MediatR.Extensions.Microsoft.DependencyInjection.dll

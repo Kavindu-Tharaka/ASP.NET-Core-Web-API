@@ -8,9 +8,21 @@ namespace BookStoreAPI.Helpers
     {
         public ApplicationMapper()
         {
-            CreateMap<Product, ProductModel>().ReverseMap();
-            CreateMap<ProductCategory, ProductCategoryModel>().ReverseMap();
-            CreateMap<Resturant, ResturantModel>().ReverseMap();
+
+            CreateMap<Product, ResturentAPI.Handlers.Product.AddProduct.ProductModel>().ReverseMap();
+            CreateMap<Product, ResturentAPI.Handlers.Product.GetAllProducts.ProductModel>().ReverseMap();
+            CreateMap<Product, ResturentAPI.Handlers.Product.GetProductById.ProductModel>().ReverseMap();
+
+
+            CreateMap<ProductCategory, ResturentAPI.Handlers.ProductCategory.AddProductCategory.ProductCategoryModel>().ReverseMap();
+            CreateMap<ProductCategory, ResturentAPI.Handlers.ProductCategory.GetAllProductCategories.ProductCategoryModel>().ReverseMap();
+            CreateMap<ProductCategory, ResturentAPI.Handlers.ProductCategory.GetProductCategoryById.ProductCategoryModel>().ReverseMap();
+
+
+            CreateMap<Resturant, ResturentAPI.Handlers.Resturant.AddResturant.ResturantModel>().ReverseMap();
+            CreateMap<Resturant, ResturentAPI.Handlers.Resturant.GetAllResturants.ResturantModel>().ReverseMap();
+            CreateMap<Resturant, ResturentAPI.Handlers.Resturant.GetResturantById.ResturantModel>().ReverseMap();
+
 
         }
     }

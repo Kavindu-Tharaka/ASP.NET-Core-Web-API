@@ -7,9 +7,9 @@ namespace ResturentAPI.Repositories.ProductCategory
 {
     public interface IProductCategoriesRepository
     {
-        Task<List<ProductCategoryModel>> GetAllProductCategories();
-        Task<ProductCategoryModel> GetProductCategoryById(int id);
-        Task<int> AddProductCategory(ProductCategoryModel productCategoryModel);
+        Task<List<Handlers.ProductCategory.GetAllProductCategories.ProductCategoryModel>> GetAllProductCategories();
+        Task<Handlers.ProductCategory.GetProductCategoryById.ProductCategoryModel> GetProductCategoryById(int id);
+        Task<int> AddProductCategory(Handlers.ProductCategory.AddProductCategory.ProductCategoryModel productCategoryModel);
         Task UpdateProductCategory(int productCategoryId, JsonPatchDocument document);
         Task DeleteProductCategory(int productCategoryId);
     }

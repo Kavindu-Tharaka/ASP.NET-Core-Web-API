@@ -1,6 +1,8 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using ResturentAPI.Handlers.ProductCategory.GetAllProductCategories;
+using ResturentAPI.Handlers.Resturant.GetAllResturants;
+using System.ComponentModel.DataAnnotations;
 
-namespace ResturentAPI.Models
+namespace ResturentAPI.Handlers.Product.GetAllProducts
 {
     public class ProductModel
     {

@@ -19,7 +19,7 @@ namespace ResturentAPI.Repositories.Resturant
             this.mapper = mapper;
         }
 
-        public async Task<int> AddResturant(ResturantModel resturantModel)
+        public async Task<int> AddResturant(Handlers.Resturant.AddResturant.ResturantModel resturantModel)
         {
             var resturant = mapper.Map<Data.Resturant>(resturantModel);   //mehema harida?  //swagger walin test karaddi add nam una
 
@@ -36,17 +36,17 @@ namespace ResturentAPI.Repositories.Resturant
             await context.SaveChangesAsync();
         }
 
-        public async Task<List<ResturantModel>> GetAllResturants()
+        public async Task<List<Handlers.Resturant.GetAllResturants.ResturantModel>> GetAllResturants()
         {
             var records = await context.Resturants.Include(resturant => resturant.Products).ToListAsync();
 
-            return mapper.Map<List<ResturantModel>>(records);
+            return mapper.Map<List<Handlers.Resturant.GetAllResturants.ResturantModel>>(records);
         }
 
-        public async Task<ResturantModel> GetResturantById(int id)
+        public async Task<Handlers.Resturant.GetResturantById.ResturantModel> GetResturantById(int id)
         {
             var resturant = await context.Resturants.Include(resturant => resturant.Products).FirstOrDefaultAsync(pc => pc.Id.Equals(id));
-            return mapper.Map<ResturantModel>(resturant);
+            return mapper.Map<Handlers.Resturant.GetResturantById.ResturantModel>(resturant);
         }
 
         public async Task UpdateResturant(int resturantId, JsonPatchDocument document)

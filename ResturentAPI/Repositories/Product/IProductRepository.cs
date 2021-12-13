@@ -7,9 +7,9 @@ namespace ResturentAPI.Repositories.Product
 {
     public interface IProductRepository
     {
-        Task<List<ProductModel>> GetAllProducts();
-        Task<ProductModel> GetProductById(int id);
-        Task<int> AddProduct(ProductModel productModel);
+        Task<List<Handlers.Product.GetAllProducts.ProductModel>> GetAllProducts();
+        Task<Handlers.Product.GetProductById.ProductModel> GetProductById(int id);
+        Task<int> AddProduct(Handlers.Product.AddProduct.ProductModel productModel);
         Task UpdateProduct(int productId, JsonPatchDocument document);
         Task DeleteProduct(int productId);
     }

@@ -1,5 +1,4 @@
 ﻿using MediatR;
-using ResturentAPI.Models;
 using ResturentAPI.Repositories.Resturant;
 using System.Threading;
 using System.Threading.Tasks;

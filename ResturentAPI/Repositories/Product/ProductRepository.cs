@@ -20,7 +20,7 @@ namespace ResturentAPI.Repositories.Product
             this.mapper = mapper;
         }
 
-        public async  Task<int> AddProduct(ProductModel productModel)
+        public async  Task<int> AddProduct(Handlers.Product.AddProduct.ProductModel productModel)
         {
             var product = mapper.Map<Data.Product>(productModel);   //mehema harida?
 
@@ -47,7 +47,7 @@ namespace ResturentAPI.Repositories.Product
             await context.SaveChangesAsync();
         }
 
-        public async Task<List<ProductModel>> GetAllProducts()
+        public async Task<List<Handlers.Product.GetAllProducts.ProductModel>> GetAllProducts()
         {
             //GET karanna yaddi error ekak enawa Include dapu nisa
 
@@ -56,10 +56,10 @@ namespace ResturentAPI.Repositories.Product
 
             //var records = await context.Products.ToListAsync();
 
-            return mapper.Map<List<ProductModel>>(records);
+            return mapper.Map<List<Handlers.Product.GetAllProducts.ProductModel>>(records);
         }
 
-        public async Task<ProductModel> GetProductById(int id)
+        public async Task<Handlers.Product.GetProductById.ProductModel> GetProductById(int id)
         {
             //GET karanna yaddi error ekak enawa Include dapu nisa
 
@@ -68,7 +68,7 @@ namespace ResturentAPI.Repositories.Product
 
             //var product = await context.Products.FirstOrDefaultAsync(p => p.Id.Equals(id));
 
-            return mapper.Map<ProductModel>(product);
+            return mapper.Map<Handlers.Product.GetProductById.ProductModel>(product);
         }
 
         public async Task UpdateProduct(int productId, JsonPatchDocument document)

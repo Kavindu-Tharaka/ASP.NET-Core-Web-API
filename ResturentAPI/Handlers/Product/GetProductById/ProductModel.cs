@@ -1,6 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using ResturentAPI.Models;
+using System.ComponentModel.DataAnnotations;
 
-namespace ResturentAPI.Models
+namespace ResturentAPI.Handlers.Product.GetProductById
 {
     public class ProductModel
     {

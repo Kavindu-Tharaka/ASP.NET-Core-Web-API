@@ -14,10 +14,6 @@ namespace ResturentAPI.Data
         public string Name { get; set; }
 
         [Required]
-        [DataType(DataType.Text)]
-        public string Address { get; set; }
-
-        [Required]
         [Range(0, 99999)]
         [DataType(DataType.Currency)]
         public double Price { get; set; }
