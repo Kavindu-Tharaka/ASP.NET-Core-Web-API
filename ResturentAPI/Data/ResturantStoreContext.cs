@@ -13,5 +13,28 @@ namespace ResturentAPI.Data
         {
 
         }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Resturant>(entity =>
+            {
+                entity.HasKey(r => r.Id);
+                entity.Property(r => r.Products).HasColumnName("Products");
+
+                entity.HasMany<Product>(r => r.Products)
+                .WithOne(p => p.Resturant)
+                .HasForeignKey(p => p.ResturantId);
+            });
+
+            modelBuilder.Entity<ProductCategory>(entity =>
+            {
+                entity.HasKey(pc => pc.Id);
+                entity.Property(pc => pc.Products).HasColumnName("Products");
+
+                entity.HasMany<Product>(pc => pc.Products)
+                .WithOne(p => p.ProductCategory)
+                .HasForeignKey(p => p.ProductCategoryId);
+            });     
+        }
     }
 }
